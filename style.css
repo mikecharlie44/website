@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: rgb(249, 147, 5);
+}
+html,body{
+    width: 100%;
+    height: 100%; 
+}
+
+
+#nav{
+    height: 105px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 75px;
+    background-color: rgba(31, 30, 30, 0);
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#nav img{
+    height: 85px;
+    
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(245, 169, 6);
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgba(245, 169, 6, 0.307);
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+
+#main{
+   position: relative;
+   background-color: rgb(0, 0, 0, 0.37);
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+   
+}
+#page1 h2{
+    text-transform: uppercase;
+    font: serif;
+    font-size: 50px;
+    font-weight: 900;
+position: relative;
+color: rgb(241, 241, 241);
+    
+}
+#page1 h2::before{
+    content: "Weelding.  Comercial Cookery.  Car Mechanic";
+    position: absolute;
+    color: rgb(8, 8, 8);
+    top: -2.5px;
+    left: -2.5px;
+    -webkit-text-stroke: 1px rgb(106, 248, 11);
+    z-index: -1;
+}
+
+#page1 h1{
+    font-size: xx-large;
+    text-size-adjust: calc();
+    -webkit-text-fill-color: rgb(245, 230, 16);
+}
+
+#page1 p{
+    color: rgb(255, 255, 255);
+
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller{
+   /* background-color: rgb(26, 27, 27); */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 110px;
+    font-weight: 800;
+    font-family: gilroy;
+    margin-right: 10px;
+    transition: all linear 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(251, 105, 15, 0.486);
+    
+}
+#scroller  h4:hover{
+    color: rgba(225, 96, 16, 0.894);
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    
+    to{
+        transform: translateX(-100%);
+    }
+        
+}
+#about-us {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+  }
+  
