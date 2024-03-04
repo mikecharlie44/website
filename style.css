@@ -170,8 +170,8 @@ color: rgb(241, 241, 241);
     justify-content: space-around;
   }
 #about-us img{
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     object-fit: cover;
   }
