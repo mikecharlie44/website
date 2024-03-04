@@ -39,6 +39,7 @@ html,body{
     background-color: rgb(245, 169, 6);
     position: fixed;
     z-index: 99;
+    transition: all linear 0.1s;
 }
 #cursor-blur{
     height: 400px;
@@ -48,6 +49,7 @@ html,body{
     position: fixed;
     filter: blur(50px);
     z-index: 9;
+    transition: all linear 0.4s;
 }
 
 video{
