@@ -140,7 +140,7 @@ color: rgb(241, 241, 241);
     font-family: gilroy;
     margin-right: 10px;
     transition: all linear 0.5s;
-    color: transparent;
+    color: #000;
     -webkit-text-stroke: 2px rgba(251, 105, 15, 0.486);
     
 }
